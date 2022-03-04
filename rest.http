@@ -1,0 +1,24 @@
+GET http://localhost:9090/todos HTTP/1.1
+
+###
+
+POST http://localhost:9090/todos HTTP/1.1
+content-type: application/json
+{
+    "id": "5",
+    "item": "Hello There",
+    "completed": true
+}
+
+###
+
+GET http://localhost:9090/todos/1 HTTP/1.1
+
+###
+
+PATCH http://localhost:9090/todos HTTP/1.1
+content-type: application/json
+{
+    "id": "5",
+}
+
